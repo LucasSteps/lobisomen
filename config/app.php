@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://localhost'),
+    'url' => env('APP_URL', 'http://localhost'),
 
     'asset_url' => env('ASSET_URL'),
 
@@ -109,7 +109,7 @@ return [
     |
     */
 
-    'faker_locale' => 'pt_BR',
+    'faker_locale' => 'en_US',
 
     /*
     |--------------------------------------------------------------------------
