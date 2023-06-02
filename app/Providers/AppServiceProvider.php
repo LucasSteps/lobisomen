@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Termwind\Components\Dd;
 
 class AppServiceProvider extends ServiceProvider
 {

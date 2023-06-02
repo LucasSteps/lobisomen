@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('maria-luiza', ['uses' => 'MemeController@index']);
+Route::get('devs', ['uses' => 'HomeController@developersIndex']);

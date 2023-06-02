@@ -12024,4 +12024,69 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-
+.page.portfolio.home {
+  background-color: #cecece;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.page.portfolio.home .port {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page.portfolio.home .port .cards {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page.portfolio.home .port .cards .card-port {
+  width: 100%;
+  max-height: 447px;
+  overflow: hidden;
+  position: relative;
+}
+.page.portfolio.home .port .cards .card-port .data {
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.page.portfolio.home .port .cards .card-port .data .name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.page.portfolio.home .port .cards .card-port .data .name h2 {
+  font-family: serif;
+  font-weight: 600;
+  font-style: oblique;
+  max-width: 100%;
+  overflow: hidden;
+}
+.page.portfolio.home .port .cards .card-port .data img {
+  height: auto;
+  cursor: pointer;
+  width: 30%;
+}
+.page.portfolio.home .port .cards .card-port .img {
+  opacity: 40%;
+  max-height: 447px;
+  height: 47vw;
+  border-radius: 15px;
+  width: 100%;
+}
+.page.portfolio.home .port .cards .card-port:not(:last-child) {
+  margin-right: 2%;
+}

@@ -3254,7 +3254,27 @@ function withinMaxClamp(min, value, max) {
   \******************************/
 /***/ (() => {
 
-console.log('Naruto');
+
+
+/***/ }),
+
+/***/ "./resources/js/portifolio/home.js":
+/*!*****************************************!*\
+  !*** ./resources/js/portifolio/home.js ***!
+  \*****************************************/
+/***/ (() => {
+
+$(function () {
+  $('.page.portfolio.home').each(function () {
+    var $page = $(this);
+    var $linkedin = $page.find('.linkedin');
+    $linkedin.on('click', function () {
+      var url = $(this).data('link');
+      if (!url) return;
+      window.open("https://www.linkedin.com/in/".concat(url), '_blank');
+    });
+  });
+});
 
 /***/ }),
 
@@ -7918,6 +7938,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	__webpack_require__.O(undefined, ["resources/assets/css/app"], () => (__webpack_require__("./node_modules/bootstrap/dist/js/bootstrap.js")))
 /******/ 	__webpack_require__.O(undefined, ["resources/assets/css/app"], () => (__webpack_require__("./resources/js/main.js")))
 /******/ 	__webpack_require__.O(undefined, ["resources/assets/css/app"], () => (__webpack_require__("./resources/js/sidebar.js")))
+/******/ 	__webpack_require__.O(undefined, ["resources/assets/css/app"], () => (__webpack_require__("./resources/js/portifolio/home.js")))
 /******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["resources/assets/css/app"], () => (__webpack_require__("./resources/sass/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
