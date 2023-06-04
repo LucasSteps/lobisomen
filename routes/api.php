@@ -16,11 +16,10 @@ Route::post('login', function (Request $request) {
 
     if (Auth::attempt($request->only('email', 'password'))) {
 
-        $user = Auth::user();
+        $user = (object)Auth::user();
         $token = $user->createToken('app')->plainTextToken;
 
         return response()->json($token, 200);
-
     }
 
     return response()->json([
